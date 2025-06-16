@@ -11,7 +11,7 @@ const local = "mongodb://127.0.0.1:27017/dbtest";
 // tạo hàm kết nối
 const connect = async()=>{
     try {
-        await mongoose.connect(atlat, {
+        await mongoose.connect(local, {
             useNewUrlParser: true,
             useUnifiedTopology: true// giúp kết nối ổn định hơn
         })

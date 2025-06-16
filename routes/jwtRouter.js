@@ -21,10 +21,10 @@ router.post('/checkLogin', async(req, res, next)=> {
                 "status": 200,
                 "message": "Đăng nhập thành công",
                 "data": {
-                    "user": user,
-                    "token": token,
-                    "refresh_token": refreshToken
-                }
+                    "user": user
+                },
+                 "token": token,
+                 "refreshToken": refreshToken
             });
         } else {
             res.json({
